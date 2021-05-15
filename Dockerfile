@@ -1,6 +1,6 @@
 # *************************************
 #
-# OMO MSA
+# OpenGM
 #
 # *************************************
 
@@ -13,7 +13,7 @@ ENV MSA_MODE release
 
 EXPOSE 9606
 
-ADD omo-msa-approval /usr/local/bin/
-RUN chmod +x /usr/local/bin/omo-msa-approval
+ADD ogm-approval /usr/local/bin/
+RUN chmod +x /usr/local/bin/ogm-approval
 
-CMD ["omo-msa-approval"]
+CMD ["/usr/local/bin/ogm-approval"]
